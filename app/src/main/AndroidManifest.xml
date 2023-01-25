@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.diaco.majazi">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR"/>
+    <!--                <uses-permission android:name="ir.mservices.market.BILLING" />-->
+    <application
+        android:allowBackup="true"
+        android:name=".MyApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:supportsRtl"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.MyApplication">
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7409461460639001~3507897686"/>
+
+        <meta-data
+            android:name="co.ronash.pushe.token"
+            android:value="PUSHE_518322220404" />
+
+        <service
+            android:name="co.ronash.pushe.fcm.FcmService"
+            tools:node="remove" />
+
+        <service android:name=".NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".NotifyActivity"
+            android:label="liom"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".Setting.MyPushListener"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="co.ronash.pushe.RECEIVE" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ParamsActivity"
+            android:label="fake"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--http://www.liom-app.ir/liom-->
+                <data
+                    android:host="app"
+                    android:scheme="vnumber"/>
+
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

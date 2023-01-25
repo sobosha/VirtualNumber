@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D000000">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:id="@+id/ProgressBuy"
+        android:visibility="visible"/>
+    <RelativeLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_white_dialog"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible"
+        android:id="@+id/BuyDialog">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_ok_dialog"
+            android:layout_below="@id/ImageBasket">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:textColor="#b4b8bb"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:text="@string/roull"
+                android:id="@+id/TextviewDesc"
+                android:gravity="center"
+                />
+        </ScrollView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_shopping_cart"
+            app:tint="#b4b8bb"
+            android:id="@+id/ImageBasket"/>
+        <TextView
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:text="رفتن به فروشگاه"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/shape_ok_btn"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_ok_dialog"/>
+        <TextView
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:text="بستن"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"
+            android:background="@drawable/shape_cancle_btn"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_cancle_dialog"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

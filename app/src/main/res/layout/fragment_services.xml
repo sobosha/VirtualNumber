@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <TextView
+        android:id="@+id/textview_title_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview_money"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/cardview_money"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:background="@drawable/shape_cardview_coin"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+
+            android:id="@+id/btn_Plus_money">
+
+            <TextView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/plus"
+                android:id="@+id/tempCost"/>
+            <TextView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tempCost"
+                android:text="ت"
+                android:textSize="@dimen/_7sdp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/temp2"/>
+            <TextView
+                android:id="@+id/textview_Money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/temp2"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cardview_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textview_title_services"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_cardview"
+        android:layout_marginBottom="@dimen/_minus20sdp"
+        android:elevation="@dimen/_10sdp"
+        >
+        <ProgressBar
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/progress_load"/>
+        <RelativeLayout
+            android:id="@+id/rel_choice_mainmenu_rules"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:animateLayoutChanges="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/cardview_sharayetavalie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="شرایط اولیه"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardview_sharayetavalie">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/roull2"
+                android:textColor="#b4b8bb"
+                android:textSize="@dimen/_14sdp" />
+            </androidx.core.widget.NestedScrollView>
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/Sort"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="مرتب سازی بر اساس :"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:id="@+id/temp"/>
+            <TextView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_toLeftOf="@id/temp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_cardview_shomaremajazi_bluelight"
+                android:text="ارزان ترین"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#56a1ff"
+                android:id="@+id/SortLow"/>
+            <TextView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_toLeftOf="@id/SortLow"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_cardview_shomaremajazi_blue"
+                android:text="گران ترین"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/SortHigh"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_services"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_below="@id/Sort"
+            
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

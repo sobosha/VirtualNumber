@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: ir.tapsell.sdk:tapsell-sdk-android:4.7.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb9b7486da1e481f724f7b9bc9f548c/tapsell-sdk-android-4.7.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb9b7486da1e481f724f7b9bc9f548c/tapsell-sdk-android-4.7.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb9b7486da1e481f724f7b9bc9f548c/tapsell-sdk-android-4.7.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb9b7486da1e481f724f7b9bc9f548c/jetified-tapsell-sdk-android-4.7.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb9b7486da1e481f724f7b9bc9f548c/jetified-tapsell-sdk-android-4.7.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb9b7486da1e481f724f7b9bc9f548c/jetified-tapsell-sdk-android-4.7.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

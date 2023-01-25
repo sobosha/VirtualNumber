@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: ir.metrix:metrix:1.0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb4395923ed862c217109416a6553415/metrix-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb4395923ed862c217109416a6553415/metrix-1.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb4395923ed862c217109416a6553415/metrix-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb4395923ed862c217109416a6553415/jetified-metrix-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb4395923ed862c217109416a6553415/jetified-metrix-1.0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb4395923ed862c217109416a6553415/jetified-metrix-1.0.5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

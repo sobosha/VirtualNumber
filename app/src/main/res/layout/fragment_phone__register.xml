@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".phone_Register">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#fafcfe"
+
+        >
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="7sp"
+            android:text="شماره موبایل خود را وارد کنید"
+            android:id="@+id/text_bold_top"
+            android:layout_above="@id/textview_cardview_top"/>
+        <TextView
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:textStyle="normal"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#b4b8bb"
+            android:lineSpacingExtra="6sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="برای استفاده از اپلیکیشن اول باید وارد شوید"
+            android:layout_above="@id/cardview_phone_enter"
+            android:id="@+id/textview_cardview_top"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:id="@+id/cardview_phone_enter">
+            <EditText
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="شماره موبایل"
+                android:textColorHint="#b4b8bb"
+                android:background="@null"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/editText_phone_enter"
+                android:maxLength="11"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="الکی"
+            android:textColor="@color/lightRed"
+            android:textSize="@dimen/_10sdp"
+            android:layout_below="@id/cardview_phone_enter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="invisible"
+            android:id="@+id/textview_Alert"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:elevation="0dp"
+            android:backgroundTint="#f4f6f8">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp">
+                <CheckBox
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/checkbox_rule"
+                    android:outlineSpotShadowColor="@color/blueColor"
+                    android:outlineAmbientShadowColor="@color/blueColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_toLeftOf="@id/checkbox_rule"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:text="قوانین و مقررات را خواندم و تاییدش می کنم"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_below="@id/checkbox_rule"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/roull"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="#b4b8bb"
+                    android:lineSpacingExtra="5sp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="ادامه دادن"
+                    android:background="@drawable/shape_text_countinu"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:id="@+id/btn_countinue_register"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>

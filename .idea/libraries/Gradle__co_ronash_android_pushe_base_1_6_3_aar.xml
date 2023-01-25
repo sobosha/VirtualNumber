@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: co.ronash.android:pushe-base:1.6.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2eaada8a112e037e19fe09579ef69bda/jetified-pushe-base-1.6.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2eaada8a112e037e19fe09579ef69bda/jetified-pushe-base-1.6.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2eaada8a112e037e19fe09579ef69bda/jetified-pushe-base-1.6.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c7efd1028deb2d8a504235bb47947b0e/jetified-pushe-base-1.6.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c7efd1028deb2d8a504235bb47947b0e/jetified-pushe-base-1.6.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c7efd1028deb2d8a504235bb47947b0e/jetified-pushe-base-1.6.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.ronash.android/pushe-base/1.6.3/1af09788f1a759784a626ac76dab7fe379302fad/pushe-base-1.6.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

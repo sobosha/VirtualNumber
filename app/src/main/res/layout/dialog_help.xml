@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D000000">
+    <RelativeLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_white_dialog"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/BuyDialog">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_cancle_dialog">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="سرویس ها:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/colorBlack"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#b4b8bb"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="شما می توانید شماره مجازی خود را از این بخش خریداری نمایید."
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="لیست خرید:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#b4b8bb"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="لیست خرید های قبلی شما در این قسمت نمایش داده می شود."
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="شارژ حساب:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#b4b8bb"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="با کلیک بر روی قسمت شارژ حساب (بالا راست) می توانید حساب خودتان را شارژ نمایید"
+                    />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:text="بستن"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"
+            android:background="@drawable/shape_cancle_btn"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_cancle_dialog"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
